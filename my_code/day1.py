@@ -152,3 +152,7 @@ for i in range(2, 100):
             is_prime = True
     if is_prime:
         print(i)
+
+
+
+
