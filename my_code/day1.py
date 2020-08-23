@@ -1,5 +1,14 @@
-from math import sqrt
-from random import randint
+import math 
+import random 
+import os
+import time
+import string
+import PIL
+from  PIL import Image
+from time import time
+from threading import Thread
+
+import requests
 # 华氏度转摄氏度
 # f = input("化氏度：")
 # print(type(f))
@@ -140,19 +149,52 @@ from random import randint
 #     b = c
 #     print(" %d" %c, end ="")
 
-# 找出10000以内的完美数。
-is_prime = True
-for i in range(2, 100):
-    sd = int(sqrt(i))
-    for j in range(2, sd + 1):
-        if i % j == 0:
-            is_prime = False 
-            break
-        else:
-            is_prime = True
-    if is_prime:
-        print(i)
-print(23)
+# # 找出1000以内的素数。
+# is_prime = True
+# for i in range(2, 1000):
+#     sd = int(sqrt(i))
+#     for j in range(2, sd + 1):
+#         if i % j == 0:
+#             is_prime = False 
+#             break
+#         else:
+#             is_prime = True
+#     if is_prime:
+#         print(i)
+
+
+# # 在屏幕上显示跑马灯文字。
+# def main():
+#     content = '北京欢迎你为你开天辟地'
+#     while True:
+#         # 清理屏幕上的输出
+#         os.system('cls')  # os.system('clear')
+#         print(content)
+#         # 休眠200毫秒
+#         time.sleep(0.5)
+#         content = content[1:] + content[0]
+
+# if __name__ == '__main__':
+#     main()
+
+os.system('cls')
+# # 设计一个函数产生指定长度的验证码，验证码由大小写字母和数字构成
+
+# def generate_code(code_len=4):
+#     H = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789'
+#     code = ''
+#     for i in range(code_len):
+#         code += random.choice(H)
+#     return code
+
+# print(generate_code(code_len=6)) 
+
+# # 图像处理
+# image = Image.open('D:/github_project/Python-100-Days/Day01-15/code/Day15/res/guido.jpg')
+# print(image.format, image.size,image.mode)
+# image.thumbnail((128, 128))
+# image.show()
+
 
 
 
